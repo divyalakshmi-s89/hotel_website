@@ -6,7 +6,7 @@ import { SNACKS } from '../utils/menuData';
 import toast from 'react-hot-toast';
 
 // Snack price per KG
-const SNACK_PRICE_PER_KG = 160;
+const SNACK_PRICE_PER_KG = 250;
 
 function SnackCard({ snack, index, inView }) {
   const [imgError, setImgError] = useState(false);
@@ -100,7 +100,7 @@ export default function SnacksSection() {
             color: 'var(--primary)', padding: '0.4rem 1.2rem', borderRadius: '50px',
             fontSize: '0.9rem', fontWeight: 700, margin: '0.8rem auto 0', display: 'block', width: 'fit-content'
           }}>
-            🏷️ All Snacks — ₹160 per kg
+            🏷️ All Snacks — ₹250 per kg
           </div>
           <div className="section-divider" />
         </div>
