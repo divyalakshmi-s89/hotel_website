@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useCart } from '../context/CartContext';
-import { FiShoppingCart, FiMenu, FiX } from 'react-icons/fi';
-
+import { FiShoppingCart } from 'react-icons/fi';
 export default function Navbar({ onCartClick }) {
   const { totalItems } = useCart();
   const [scrolled, setScrolled] = useState(false);

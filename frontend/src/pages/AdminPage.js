@@ -10,7 +10,7 @@ export default function AdminPage() {
   const [orders, setOrders] = useState([]);
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [activeTab, setActiveTab] = useState('orders');
+ 
 
   const handleLogin = async e => {
     e.preventDefault();
@@ -41,8 +41,10 @@ export default function AdminPage() {
   };
 
   useEffect(() => {
-    if (token) fetchData();
-  }, [token]);
+  if (token) {
+    fetchData();
+  }
+}, [token]);
 
   const updateStatus = async (id, status) => {
     const res = await api.updateOrderStatus(token, id, status);
@@ -82,7 +84,7 @@ export default function AdminPage() {
       <div className="admin-header">
         <h1>🍛 Jeya Hotel – Admin Dashboard</h1>
         <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center' }}>
-          <button onClick={fetchData} className="nav-cart-btn">🔄 Refresh</button>
+<button onClick={fetchData} className="nav-cart-btn">🔄 Refresh</button>
           <button onClick={logout} style={{ background: '#e53e3e', color: 'white', padding: '0.5rem 1rem', borderRadius: 50, border: 'none', cursor: 'pointer', fontWeight: 600 }}>Logout</button>
         </div>
       </div>

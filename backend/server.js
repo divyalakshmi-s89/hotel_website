@@ -54,13 +54,9 @@ mongoose
     });
   })
   .catch(err => {
-    console.error('❌ MongoDB connection error:', err.message);
-    console.error('');
-    console.error('📌 Make sure MongoDB is running locally.');
-    console.error('   - Open MongoDB Compass');
-    console.error('   - Connect to: mongodb://127.0.0.1:27017');
-    console.error('   - The database "jeya-hotel" will be created automatically.');
-    process.exit(1);
-  });
+  console.error('❌ MongoDB connection error:');
+  console.error(err);
+  process.exit(1);
+});
 
 module.exports = app;

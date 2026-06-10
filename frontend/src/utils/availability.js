@@ -36,7 +36,7 @@ export function getAvailableMenus() {
 }
 
 export function getHotelStatus() {
-  const { hours, minutes, totalMinutes } = getISTTime();
+const { totalMinutes } = getISTTime();
   const open  = 7 * 60;
   const close = 22 * 60;
 

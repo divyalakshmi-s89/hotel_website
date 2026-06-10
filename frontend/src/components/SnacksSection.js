@@ -98,7 +98,7 @@ export default function SnacksSection() {
             display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
             background: 'rgba(230,81,0,0.1)', border: '1px solid rgba(230,81,0,0.25)',
             color: 'var(--primary)', padding: '0.4rem 1.2rem', borderRadius: '50px',
-            fontSize: '0.9rem', fontWeight: 700, margin: '0.8rem auto 0', display: 'block', width: 'fit-content'
+            fontSize: '0.9rem', fontWeight: 700, margin: '0.8rem auto 0', width: 'fit-content'
           }}>
             🏷️ All Snacks — ₹250 per kg
           </div>
